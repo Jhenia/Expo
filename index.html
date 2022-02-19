@@ -70,7 +70,6 @@
     	<a href=""><img src="images/in.svg" alt="in"></a>
     </div>
     </div>
-   
 	<div class="main__screen-description ">
 		<p>ВАШ ШЛЯХ НА РИНОК САУДІВСЬКОЇ АРАВІЇ</p>
 		<h1>ПЕРШИЙ МІЖНАРОДНИЙ  ЕКОНОМІЧНИЙ  BUSINESS- FORUM
@@ -81,60 +80,37 @@
 			<p>завантажити програму</p>
 		<img src="images/arrow_download.svg" alt="arrow_download">
 		<span>15 -20 травня <br>
-2022</span>
+				2022</span>
 		</div>
-		
 	</div>
-</header><div class="timer">
-    <div class="timer__items">
-    	<div class=""><div class="timer__item timer__days" >00 </div>ДНЕЙ</div>
-      
-
-      <div class="timer__item timer__hours">00</div>
-      <div class="timer__item timer__minutes">00</div>
-      <div class="timer__item timer__seconds">00</div>
+	<div class="timer">
+		<div class="timer__wrapper">
+			<div class="timer__items">
+    	<h4>до открытия осталось</h4>
+    	<div class="timer__items-wrapper1">
+    		<div class="timer__item timer__days">00</div>
+    	<p>&nbsp ДНЕЙ</p>
     </div>
+    <div class="timer__items-wrapper">
+    	<div class="timer__item timer__hours">00</div>
+    	<p>часов</p>
+    </div>
+      <div class="timer__items-wrapper">
+      	<div class="timer__item timer__minutes">00</div>
+      	<p>минут</p>
+      </div>
+      <div class="timer__items-wrapper">
+      	  <div class="timer__item timer__item-special timer__seconds">00</div>
+      	  <p>секунд</p>
+      </div>
+    
+    </div>
+		</div>
+    
   </div>
+</header>
+
 <section style="height: 2000px;"></section>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-      // конечная дата
-      const deadline = new Date(2022, 04, 06);
-      // id таймера
-      let timerId = null;
-      // склонение числительных
-      function declensionNum(num, words) {
-        return words[(num % 100 > 4 && num % 100 < 20) ? 2 : [2, 0, 1, 1, 1, 2][(num % 10 < 5) ? num % 10 : 5]];
-      }
-      // вычисляем разницу дат и устанавливаем оставшееся времени в качестве содержимого элементов
-      function countdownTimer() {
-        const diff = deadline - new Date();
-        if (diff <= 0) {
-          clearInterval(timerId);
-        }
-        const days = diff > 0 ? Math.floor(diff / 1000 / 60 / 60 / 24) : 0;
-        const hours = diff > 0 ? Math.floor(diff / 1000 / 60 / 60) % 24 : 0;
-        const minutes = diff > 0 ? Math.floor(diff / 1000 / 60) % 60 : 0;
-        const seconds = diff > 0 ? Math.floor(diff / 1000) % 60 : 0;
-        $days.textContent = days < 10 ? '0' + days : days;
-        $hours.textContent = hours < 10 ? '0' + hours : hours;
-        $minutes.textContent = minutes < 10 ? '0' + minutes : minutes;
-        $seconds.textContent = seconds < 10 ? '0' + seconds : seconds;
-        $days.dataset.title = declensionNum(days, ['день', 'дня', 'дней']);
-        $hours.dataset.title = declensionNum(hours, ['час', 'часа', 'часов']);
-        $minutes.dataset.title = declensionNum(minutes, ['минута', 'минуты', 'минут']);
-        $seconds.dataset.title = declensionNum(seconds, ['секунда', 'секунды', 'секунд']);
-      }
-      // получаем элементы, содержащие компоненты даты
-      const $days = document.querySelector('.timer__days');
-      const $hours = document.querySelector('.timer__hours');
-      const $minutes = document.querySelector('.timer__minutes');
-      const $seconds = document.querySelector('.timer__seconds');
-      // вызываем функцию countdownTimer
-      countdownTimer();
-      // вызываем функцию countdownTimer каждую секунду
-      timerId = setInterval(countdownTimer, 1000);
-    });
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
