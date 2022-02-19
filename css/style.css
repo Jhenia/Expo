@@ -75,6 +75,7 @@ select {
     display: flex;
     justify-content: space-between;
     margin: 0;
+    padding: 0;
 }
 
 .main__screen {
@@ -92,14 +93,14 @@ select {
 }
 
 .main__screen-nav nav ul li a {
-    font-size: 0.75rem;
+    font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
     color: #545454;
 }
 
 .main__screen-nav {
-    max-width: 631px;
+    max-width: 642px;
     width: 100%;
 }
 
