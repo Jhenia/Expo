@@ -140,7 +140,7 @@ a.main__screen-btn {
     position: absolute;
     z-index: 2;
     top: 0;
-    background: rgba(0,0,0,.5);
+    background: rgb(0 0 0 / 65%);
     left: 0;
     height: 100%;
     width: 100%;
@@ -151,4 +151,92 @@ a.main__screen-btn {
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+}
+
+.main__screen-description {
+    z-index: 5;
+    position: relative;
+}
+
+.main__screen-description p {
+    font-size: 25px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.4em;
+
+/* Gold */
+    color: #C19E5C;
+    max-width: 880px;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.main__screen-description h1 {
+    font-size: 37px;
+    line-height: 48px;
+    color: #fff;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.main__screen-description img {
+    display: block;
+    margin: 0 auto;
+}
+
+.header-description-regestration {
+    max-width: 160px;
+    margin: 0 auto;
+}
+
+.header-registration a {
+    border: 1px solid #C19E5C;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #fff;
+    padding: 7px 12px;
+    margin-top: 25px;
+    display: block;
+    max-width: 159px;
+}
+
+.header-registration p {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: lowercase;
+    color: #fff;
+    margin: 0;
+    padding-top: 21px;
+    letter-spacing: inherit;
+    padding-bottom: 6px;
+}
+
+.header-registration span {
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-top: 69px;
+}
+
+.main__screen-social {
+    position: relative;
+    z-index: 6;
+    display: flex;
+    max-width: 86px;
+    margin-left: auto;
+    justify-content: space-between;
+    padding-top: 26px;
+}
+
+.main__screen-social-wrapper {
+    max-width: 1069px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
