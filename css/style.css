@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 ul[class],
@@ -34,7 +35,7 @@ body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
+  color: #3B3B3B;
 }
 
 ul[class],
@@ -334,6 +335,8 @@ a.main__screen-btn {
     font-size: 38px;
     line-height: 45px;
     color: #3B3B3B;
+    text-transform: uppercase;
+    width: 460px;
 }
 
 section.second__section h3 {
@@ -383,7 +386,7 @@ section.second__section {
     position: relative;
 }
 
-section.second__section img {
+section.second__section img.special {
     position: absolute;
     left: 49%;
     top: -3.5%;
@@ -408,4 +411,125 @@ img.special__line {
     position: inherit !important;
     margin-top: 105px;
     margin-left: 1%;
+}.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card{
+    cursor: pointer;
+    width: 345px;
+    height: 415px;
+}
+
+.front,
+.back{
+    width: 345px;
+    height: 415px;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform .5s linear;
+}
+
+.front img{
+    height: 100%;
+}
+
+.front{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.back{
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #f1f1f1;
+    background: #c19e5c80;
+    
+/* G_ ultra_light */
+    border: 1px solid #DFDFDF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.back-content{
+    width: 100%;
+    text-align: center;
+    height: 100%;
+}
+
+.fas{
+    display: block;
+    margin: 20px 0;
+    color: red;
+    font-size: 30px;
+}
+
+.card:hover > .front{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.card:hover > .back{
+    transform: perspective(600px) rotateY(0deg);
+}
+
+.card__wrapper-item {
+    height: 415px;
+    width: 345px;
+    box-sizing: border-box;
+    /* background: blue; */
+    position: relative;
+}
+
+img.front__icon {
+    position: initial !important;
+    width: 200px;
+    height: 200px;
+}
+
+.front img {
+    position: initial !important;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+
+img.arrow__right {
+    width: 32px;
+    height: 31px;
+    margin: 0 auto;
+}
+
+.front p {
+    font-size: 14px;
+    line-height: 24px;
+/* or 171% */
+    text-align: center;
+    letter-spacing: 0.05em;
+    max-width: 180px;
+    margin: 0 auto;
+    margin-top: 34px;
+    margin-bottom: 18px;
+}
+
+.card__wrapper {
+    margin-top: 40px;
+}
+
+.back img {
+    margin: 0 auto;
+    margin-top: 43.5px;
+}
+
+.back p {
+    font-size: 14px;
+    line-height: 24px;
+/* or 171% */
+    letter-spacing: 0.05em;
+    max-width: 296px;
+    text-align: left;
+    padding-left: 50px;
+    margin-top: 28px;
+}
+
+img.arrow_right-back {
+    margin-top: 96px;
 }
