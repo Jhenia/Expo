@@ -102,7 +102,9 @@ select {
     max-width: 642px;
     width: 100%;
 }
-
+.gold{
+    color: #C19E5C;
+}
 header {
     height: 100vh;
 }
@@ -324,7 +326,7 @@ a.main__screen-btn {
     background-image: url('../images/bg_for_title.png');
     background-size: cover;
     height: 95px;
-    width: 365px;
+    width: 556px;
     margin-top: 128px;
 }
 
@@ -332,11 +334,11 @@ a.main__screen-btn {
     padding-top: 26px;
     margin-left: 100px;
     font-weight: 300;
-    font-size: 38px;
+    font-size: 30px;
     line-height: 45px;
     color: #3B3B3B;
     text-transform: uppercase;
-    width: 460px;
+    width: 500px;
 }
 
 section.second__section h3 {
@@ -411,6 +413,7 @@ img.special__line {
     position: inherit !important;
     margin-top: 105px;
     margin-left: 1%;
+    width: 1px;
 }.center{
     position: absolute;
     top: 50%;
@@ -536,4 +539,38 @@ img.arrow__right {
 
 img.arrow_right-back {
     margin-top: 96px;
+}
+
+section.second__section_prewiev {
+    max-width: 1114px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 37px;
+}
+
+.second__section-item img {
+    margin: 0 auto;
+}
+
+.second__section-item h3 {
+    font-size: 24px;
+    line-height: 25px;
+/* identical to box height, or 104% */
+    text-align: center;
+    margin-top: 24px;
+    letter-spacing: 0.05em;
+}
+
+.second__section-item p {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #3B3B3B;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    margin: 25px 0px;
+}
+
+.second__section-item span {
+    font-weight: 600;
 }
