@@ -539,6 +539,7 @@ img.arrow__right {
 
 img.arrow_right-back {
     margin-top: 96px;
+    transform: rotateY(180deg);
 }
 
 section.second__section_prewiev {
