@@ -430,6 +430,10 @@ img.special__line {
     height: 415px;
     overflow: hidden;
     backface-visibility: hidden;
+    -webkit-perspective: 0;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translate3d(0,0,0);
+    visibility:visible;
     position: absolute;
     transition: transform .5s linear;
 }
