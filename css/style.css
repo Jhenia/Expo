@@ -447,6 +447,7 @@ img.special__line {
 
 .front{
     transform: perspective(600px) rotateY(0deg);
+    transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .back{
@@ -456,6 +457,7 @@ img.special__line {
     
 /* G_ ultra_light */
     border: 1px solid #DFDFDF;
+    transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1), -webkit-transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
