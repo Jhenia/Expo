@@ -503,7 +503,7 @@ img.front__icon {
 
 img.arrow__right {
     width: 32px;
-    height: 31px;
+    height: 21px;
     margin: 0 auto;
 }
 
@@ -663,6 +663,9 @@ section.second__section_prewiev {
     -webkit-filter: grayscale(0%);
     filter: grayscale(99%);
     cursor: pointer;
+    min-width: 100%;
+    width: -webkit-fill-available;
+    max-width: fit-content;
 }
 
 .prewiev__wrapper-item img:hover {
